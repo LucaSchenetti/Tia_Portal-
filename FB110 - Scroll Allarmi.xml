@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2022-04-26T19:39:02.1727299Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16 Update 1</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V16 Update 5</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V16 Update 5</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P, G115D</DisplayName>
+        <DisplayVersion>V16 Update 5</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Input">
+    <Member Name="Timer" Datatype="Time" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Tempo Per Scroll</MultiLanguageText></Comment><StartValue>T#3S</StartValue></Member>
+    <Member Name="Numero Di Allarmi" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="Timer Scroll" Datatype="TON_TIME" Version="1.0" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Sections><Section Name="None"><Member Name="PT" Datatype="Time" /><Member Name="ET" Datatype="Time" /><Member Name="IN" Datatype="Bool" /><Member Name="Q" Datatype="Bool" /></Section></Sections></Member>
+    <Member Name="App.Per Scroll Allarmi" Datatype="Array[0..80] of Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="Consenso Timer" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="Uscita Timer" Datatype="Bool" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="Cont" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="App Cont" Datatype="Int" Remanence="NonRetain" Accessibility="Public"><AttributeList><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="App" Datatype="Int" />
+    <Member Name="By" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="it-IT">Byte </MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Bt" Datatype="Int">
+      <Comment>
+        <MultiLanguageText Lang="it-IT">Bit</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Time Out" Datatype="Time">
+      <Comment>
+        <MultiLanguageText Lang="it-IT">Tempo Attuale</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <MemoryReserve>100</MemoryReserve>
+      <Name>FB110 - Scroll Allarmi</Name>
+      <Number>110</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SetENOAutomatically>false</SetENOAutomatically>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>it-IT</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <NewLine Num="1" UId="21" />
+  <Access Scope="LocalVariable" UId="22">
+    <Symbol UId="23">
+      <Component Name="App" UId="24" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="25" />
+  <Blank Num="1" UId="26" />
+  <Access Scope="LiteralConstant" UId="27">
+    <Constant UId="28">
+      <ConstantValue UId="30">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="31" />
+  <NewLine Num="1" UId="32" />
+  <Token Text="FOR" UId="33" />
+  <Blank Num="1" UId="34" />
+  <Access Scope="LocalVariable" UId="35">
+    <Symbol UId="36">
+      <Component Name="By" UId="37" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="38" />
+  <Token Text=":=" UId="39" />
+  <Blank Num="1" UId="40" />
+  <Access Scope="LiteralConstant" UId="41">
+    <Constant UId="42">
+      <ConstantValue UId="44">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="45" />
+  <Token Text="TO" UId="46" />
+  <Blank Num="1" UId="47" />
+  <Access Scope="LiteralConstant" UId="48">
+    <Constant UId="49">
+      <ConstantValue UId="51">10</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="52" />
+  <Token Text="DO" UId="53" />
+  <NewLine Num="1" UId="54" />
+  <Blank Num="4" UId="55" />
+  <Token Text="FOR" UId="56" />
+  <Blank Num="1" UId="57" />
+  <Access Scope="LocalVariable" UId="58">
+    <Symbol UId="59">
+      <Component Name="Bt" UId="60" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="61" />
+  <Token Text=":=" UId="62" />
+  <Blank Num="1" UId="63" />
+  <Access Scope="LiteralConstant" UId="64">
+    <Constant UId="65">
+      <ConstantValue UId="67">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="68" />
+  <Token Text="TO" UId="69" />
+  <Blank Num="1" UId="70" />
+  <Access Scope="LiteralConstant" UId="71">
+    <Constant UId="72">
+      <ConstantValue UId="74">7</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="75" />
+  <Token Text="DO" UId="76" />
+  <NewLine Num="1" UId="77" />
+  <Blank Num="8" UId="78" />
+  <Access Scope="LocalVariable" UId="79">
+    <Symbol UId="80">
+      <Component Name="App.Per Scroll Allarmi" UId="81">
+        <Token Text="[" UId="82" />
+        <Access Scope="LocalVariable" UId="83">
+          <Symbol UId="84">
+            <Component Name="App" UId="85" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="86" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="87" />
+  <Token Text=":=" UId="88" />
+  <Blank Num="1" UId="89" />
+  <Access Scope="Call" UId="90">
+    <Instruction Name="PEEK_BOOL" UId="91">
+      <Token Text="(" UId="92" />
+      <Parameter Name="area" UId="93">
+        <Blank Num="1" UId="94" />
+        <Token Text=":=" UId="95" />
+        <Blank Num="1" UId="96" />
+        <Access Scope="LiteralConstant" UId="97">
+          <Constant UId="98">
+            <ConstantValue UId="100">16#84</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="101" />
+      <Blank Num="1" UId="102" />
+      <Parameter Name="dbNumber" UId="103">
+        <Blank Num="1" UId="104" />
+        <Token Text=":=" UId="105" />
+        <Blank Num="1" UId="106" />
+        <Access Scope="LiteralConstant" UId="107">
+          <Constant UId="108">
+            <ConstantValue UId="110">111</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="111" />
+      <Blank Num="1" UId="112" />
+      <Parameter Name="byteOffset" UId="113">
+        <Blank Num="1" UId="114" />
+        <Token Text=":=" UId="115" />
+        <Blank Num="1" UId="116" />
+        <Access Scope="LiteralConstant" UId="117">
+          <Constant UId="118">
+            <ConstantValue UId="120">10</ConstantValue>
+          </Constant>
+        </Access>
+        <Blank Num="1" UId="121" />
+        <Token Text="+" UId="122" />
+        <Blank Num="1" UId="123" />
+        <Access Scope="LocalVariable" UId="124">
+          <Symbol UId="125">
+            <Component Name="By" UId="126" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="127" />
+      <Blank Num="1" UId="128" />
+      <Parameter Name="bitOffset" UId="129">
+        <Blank Num="1" UId="130" />
+        <Token Text=":=" UId="131" />
+        <Blank Num="1" UId="132" />
+        <Access Scope="LiteralConstant" UId="133">
+          <Constant UId="134">
+            <ConstantValue UId="136">0</ConstantValue>
+          </Constant>
+        </Access>
+        <Blank Num="1" UId="137" />
+        <Token Text="+" UId="138" />
+        <Blank Num="1" UId="139" />
+        <Access Scope="LocalVariable" UId="140">
+          <Symbol UId="141">
+            <Component Name="Bt" UId="142" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="144" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="145" />
+  <NewLine Num="1" UId="146" />
+  <Blank Num="8" UId="147" />
+  <Access Scope="LocalVariable" UId="148">
+    <Symbol UId="149">
+      <Component Name="App" UId="150" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="151" />
+  <Token Text=":=" UId="152" />
+  <Blank Num="1" UId="153" />
+  <Access Scope="LocalVariable" UId="154">
+    <Symbol UId="155">
+      <Component Name="App" UId="156" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="157" />
+  <Token Text="+" UId="158" />
+  <Blank Num="1" UId="159" />
+  <Access Scope="LiteralConstant" UId="160">
+    <Constant UId="161">
+      <ConstantValue UId="163">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="164" />
+  <NewLine Num="1" UId="165" />
+  <Blank Num="4" UId="166" />
+  <Token Text="END_FOR" UId="167" />
+  <Token Text=";" UId="168" />
+  <NewLine Num="1" UId="169" />
+  <Blank Num="4" UId="170" />
+  <NewLine Num="1" UId="171" />
+  <Token Text="END_FOR" UId="172" />
+  <Token Text=";" UId="173" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Copio Dalla DB Allarmi Tutti Gli Allarmi sull'Array  "App.Per Scroll Allarmi"</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Copiatura In Array</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StructuredText xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StructuredText/v3">
+  <LineComment Inserted="false" NoClosingBracket="false" UId="21">
+    <Text UId="22">Timer Per Scroll</Text>
+  </LineComment>
+  <NewLine Num="1" UId="23" />
+  <Access Scope="LocalVariable" UId="24">
+    <Symbol UId="25">
+      <Component Name="Timer Scroll" UId="26" />
+    </Symbol>
+  </Access>
+  <Token Text="." UId="27" />
+  <Access Scope="Call" UId="28">
+    <Instruction Name="TON" UId="29">
+      <Token Text="(" UId="30" />
+      <Parameter Name="IN" UId="31">
+        <Token Text=":=" UId="32" />
+        <Access Scope="LocalVariable" UId="33">
+          <Symbol UId="34">
+            <Component Name="Consenso Timer" UId="35" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="36" />
+      <NewLine Num="1" UId="37" />
+      <Blank Num="23" UId="38" />
+      <Parameter Name="PT" UId="39">
+        <Token Text=":=" UId="40" />
+        <Access Scope="LocalVariable" UId="41">
+          <Symbol UId="42">
+            <Component Name="Timer" UId="43" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="44" />
+      <NewLine Num="1" UId="45" />
+      <Blank Num="23" UId="46" />
+      <Parameter Name="Q" UId="47">
+        <Token Text="=&gt;" UId="48" />
+        <Access Scope="LocalVariable" UId="49">
+          <Symbol UId="50">
+            <Component Name="Uscita Timer" UId="51" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="52" />
+      <NewLine Num="1" UId="53" />
+      <Blank Num="23" UId="54" />
+      <Parameter Name="ET" UId="55">
+        <Token Text="=&gt;" UId="56" />
+        <Access Scope="LocalVariable" UId="57">
+          <Symbol UId="58">
+            <Component Name="Time Out" UId="59" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="60" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="61" />
+  <NewLine Num="1" UId="62" />
+  <Blank Num="3" UId="63" />
+  <NewLine Num="1" UId="64" />
+  <Blank Num="3" UId="65" />
+  <NewLine Num="1" UId="66" />
+  <Blank Num="4" UId="67" />
+  <LineComment Inserted="false" NoClosingBracket="false" UId="68">
+    <Text UId="69">IF Reset Timer Alla Fine Del Ciclo</Text>
+  </LineComment>
+  <NewLine Num="1" UId="70" />
+  <Blank Num="3" UId="71" />
+  <Token Text="IF" UId="72" />
+  <Blank Num="1" UId="73" />
+  <Access Scope="LocalVariable" UId="74">
+    <Symbol UId="75">
+      <Component Name="Cont" UId="76" />
+    </Symbol>
+  </Access>
+  <Token Text="&gt;" UId="77" />
+  <Blank Num="1" UId="78" />
+  <Access Scope="LiteralConstant" UId="79">
+    <Constant UId="80">
+      <ConstantValue UId="82">80</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="83" />
+  <Token Text="&amp;" UId="84" />
+  <Blank Num="1" UId="85" />
+  <Access Scope="LocalVariable" UId="86">
+    <Symbol UId="87">
+      <Component Name="App Cont" UId="88" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="89" />
+  <Token Text="&gt;" UId="90" />
+  <Blank Num="1" UId="91" />
+  <Access Scope="LiteralConstant" UId="92">
+    <Constant UId="93">
+      <ConstantValue UId="95">80</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="96" />
+  <Token Text="THEN" UId="97" />
+  <NewLine Num="1" UId="98" />
+  <Blank Num="7" UId="99" />
+  <Access Scope="LocalVariable" UId="100">
+    <Symbol UId="101">
+      <Component Name="Cont" UId="102" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="103" />
+  <Blank Num="1" UId="104" />
+  <Access Scope="LiteralConstant" UId="105">
+    <Constant UId="106">
+      <ConstantValue UId="108">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="109" />
+  <NewLine Num="1" UId="110" />
+  <Blank Num="7" UId="111" />
+  <Access Scope="LocalVariable" UId="112">
+    <Symbol UId="113">
+      <Component Name="App Cont" UId="114" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="115" />
+  <Blank Num="1" UId="116" />
+  <Access Scope="LiteralConstant" UId="117">
+    <Constant UId="118">
+      <ConstantValue UId="120">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="121" />
+  <NewLine Num="1" UId="122" />
+  <Blank Num="8" UId="123" />
+  <Access Scope="Call" UId="124">
+    <Instruction Name="PRESET_TIMER" UId="125">
+      <Token Text="(" UId="126" />
+      <Parameter Name="PT" UId="127">
+        <Blank Num="1" UId="128" />
+        <Token Text=":=" UId="129" />
+        <Blank Num="1" UId="130" />
+        <Access Scope="TypedConstant" UId="131">
+          <Constant UId="132">
+            <ConstantValue UId="133">T#0s</ConstantValue>
+          </Constant>
+        </Access>
+      </Parameter>
+      <Token Text="," UId="134" />
+      <NewLine Num="1" UId="135" />
+      <Blank Num="21" UId="136" />
+      <Parameter Name="TIMER" UId="137">
+        <Blank Num="1" UId="138" />
+        <Token Text=":=" UId="139" />
+        <Blank Num="1" UId="140" />
+        <Access Scope="LocalVariable" UId="141">
+          <Symbol UId="142">
+            <Component Name="Timer Scroll" UId="143" />
+          </Symbol>
+        </Access>
+      </Parameter>
+      <Token Text=")" UId="144" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="145" />
+  <NewLine Num="1" UId="146" />
+  <Blank Num="3" UId="147" />
+  <Token Text="END_IF" UId="148" />
+  <Token Text=";" UId="149" />
+  <NewLine Num="1" UId="150" />
+  <Blank Num="4" UId="151" />
+  <NewLine Num="1" UId="152" />
+  <Blank Num="4" UId="153" />
+  <NewLine Num="1" UId="154" />
+  <Blank Num="4" UId="155" />
+  <NewLine Num="1" UId="156" />
+  <Blank Num="3" UId="157" />
+  <Token Text="IF" UId="158" />
+  <Blank Num="1" UId="159" />
+  <Access Scope="LocalVariable" UId="160">
+    <Symbol UId="161">
+      <Component Name="Uscita Timer" UId="162" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="163" />
+  <Token Text="=" UId="164" />
+  <Blank Num="1" UId="165" />
+  <Access Scope="LiteralConstant" UId="166">
+    <Constant UId="167">
+      <ConstantValue UId="169">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="170" />
+  <Token Text="THEN" UId="171" />
+  <NewLine Num="1" UId="172" />
+  <Blank Num="7" UId="173" />
+  <Token Text="FOR" UId="174" />
+  <Blank Num="1" UId="175" />
+  <Access Scope="LocalVariable" UId="176">
+    <Symbol UId="177">
+      <Component Name="Cont" UId="178" />
+    </Symbol>
+  </Access>
+  <Token Text=":=" UId="179" />
+  <Blank Num="1" UId="180" />
+  <Access Scope="LocalVariable" UId="181">
+    <Symbol UId="182">
+      <Component Name="App Cont" UId="183" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="184" />
+  <Token Text="TO" UId="185" />
+  <Blank Num="1" UId="186" />
+  <Access Scope="LiteralConstant" UId="187">
+    <Constant UId="188">
+      <ConstantValue UId="190">80</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="191" />
+  <Token Text="DO" UId="192" />
+  <NewLine Num="1" UId="193" />
+  <Blank Num="8" UId="194" />
+  <Token Text="IF" UId="195" />
+  <Blank Num="1" UId="196" />
+  <Access Scope="LocalVariable" UId="197">
+    <Symbol UId="198">
+      <Component Name="App.Per Scroll Allarmi" UId="199">
+        <Token Text="[" UId="200" />
+        <Access Scope="LocalVariable" UId="201">
+          <Symbol UId="202">
+            <Component Name="Cont" UId="203" />
+          </Symbol>
+        </Access>
+        <Token Text="]" UId="204" />
+      </Component>
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="205" />
+  <Token Text="=" UId="206" />
+  <Blank Num="1" UId="207" />
+  <Access Scope="LiteralConstant" UId="208">
+    <Constant UId="209">
+      <ConstantValue UId="211">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Blank Num="1" UId="212" />
+  <Token Text="THEN" UId="213" />
+  <NewLine Num="1" UId="214" />
+  <Blank Num="12" UId="215" />
+  <Access Scope="GlobalVariable" UId="216">
+    <Symbol UId="217">
+      <Component Name="MainDB" UId="218" />
+      <Token Text="." UId="219" />
+      <Component Name="Alm" UId="220" />
+      <Token Text="." UId="221" />
+      <Component Name="Numero Allarme Da Visualizzare" UId="222" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="223" />
+  <Token Text=":=" UId="224" />
+  <Blank Num="1" UId="225" />
+  <Access Scope="LocalVariable" UId="226">
+    <Symbol UId="227">
+      <Component Name="Cont" UId="228" />
+    </Symbol>
+  </Access>
+  <Token Text=";" UId="229" />
+  <NewLine Num="1" UId="230" />
+  <Blank Num="12" UId="231" />
+  <Token Text="EXIT" UId="232" />
+  <Token Text=";" UId="233" />
+  <NewLine Num="1" UId="234" />
+  <Blank Num="8" UId="235" />
+  <Token Text="END_IF" UId="236" />
+  <Token Text=";" UId="237" />
+  <NewLine Num="1" UId="238" />
+  <Blank Num="8" UId="239" />
+  <Access Scope="LocalVariable" UId="240">
+    <Symbol UId="241">
+      <Component Name="App Cont" UId="242" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="243" />
+  <Token Text=":=" UId="244" />
+  <Blank Num="1" UId="245" />
+  <Access Scope="LiteralConstant" UId="246">
+    <Constant UId="247">
+      <ConstantValue UId="249">0</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="250" />
+  <NewLine Num="1" UId="251" />
+  <Blank Num="4" UId="252" />
+  <Token Text="END_FOR" UId="253" />
+  <Token Text=";" UId="254" />
+  <NewLine Num="1" UId="255" />
+  <Blank Num="4" UId="256" />
+  <Access Scope="Call" UId="257">
+    <Instruction Name="RESET_TIMER" UId="258">
+      <Token Text="(" UId="259" />
+      <NamelessParameter UId="260">
+        <Access Scope="LocalVariable" UId="261">
+          <Symbol UId="262">
+            <Component Name="Timer Scroll" UId="263" />
+          </Symbol>
+        </Access>
+      </NamelessParameter>
+      <Token Text=")" UId="264" />
+    </Instruction>
+  </Access>
+  <Token Text=";" UId="265" />
+  <NewLine Num="1" UId="266" />
+  <Blank Num="4" UId="267" />
+  <Access Scope="LocalVariable" UId="268">
+    <Symbol UId="269">
+      <Component Name="App Cont" UId="270" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="271" />
+  <Token Text=":=" UId="272" />
+  <Blank Num="1" UId="273" />
+  <Access Scope="LocalVariable" UId="274">
+    <Symbol UId="275">
+      <Component Name="Cont" UId="276" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="277" />
+  <Token Text="+" UId="278" />
+  <Blank Num="1" UId="279" />
+  <Access Scope="LiteralConstant" UId="280">
+    <Constant UId="281">
+      <ConstantValue UId="283">1</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="284" />
+  <NewLine Num="1" UId="285" />
+  <Token Text="END_IF" UId="286" />
+  <Token Text=";" UId="287" />
+  <NewLine Num="1" UId="288" />
+  <Access Scope="LocalVariable" UId="289">
+    <Symbol UId="290">
+      <Component Name="Consenso Timer" UId="291" />
+    </Symbol>
+  </Access>
+  <Blank Num="1" UId="292" />
+  <Token Text=":=" UId="293" />
+  <Blank Num="1" UId="294" />
+  <Access Scope="LiteralConstant" UId="295">
+    <Constant UId="296">
+      <ConstantValue UId="298">TRUE</ConstantValue>
+    </Constant>
+  </Access>
+  <Token Text=";" UId="299" />
+  <NewLine Num="1" UId="300" />
+</StructuredText></NetworkSource>
+          <ProgrammingLanguage>SCL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Scroll Allarmi</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="D" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="E" CompositionName="Items">
+            <AttributeList>
+              <Culture>it-IT</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>
